@@ -4,3 +4,24 @@ section 2
 1. Section Intro Setting up Your Environment
 2. Installing Visual Studio Code
 3. Installing Node.js & Yarn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================
+
+Git add .
+Git commit -m “abc”
+Git push

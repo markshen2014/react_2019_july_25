@@ -23,5 +23,17 @@ section 2
 ===================================================
 
 Git add .
-Git commit -m ìabcî
+Git commit -m ‚Äúabc‚Äù
 Git push
+
+========================================================
+
+http://indecision.mead.io/
+https://mead.io/
+
+The Great Gatsby Bootcamp
+4 hours
+
+https://mead.io/blog
+
+

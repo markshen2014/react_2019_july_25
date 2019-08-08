@@ -37,3 +37,139 @@ The Great Gatsby Bootcamp
 https://mead.io/blog
 
 
+section 10
+
+large scale app
+
+component state, pass down the tree through props
+
+if no parent component, component state not work
+
+component state have limitation (top down)
+
+component need go anywhere (reuseable)
+
+redux replace props. 
+statet container
+
+https://github.com/facebook/create-react-app
+https://github.com/zalmoxisus/redux-devtools-extension
+https://github.com/DevEdwin/state_managment
+
+redux-101.js
+
+change "webpack.config.js" to the new file
+
+
+redux.js.org
+
+yarn add redux@3.7.2
+
+import {createStore } from 'dedux';
+
+
+
+store.dispatch({
+   type:'INCREMENT'
+})
+
+watch store change
+
+store.subscribe(()=>{     //store change
+
+ console.log(store.getStatet());
+
+}
+)
+
+typeof
+
+set/reset/increment/decrement
+webpack.config.json
+
+es6 destruction  for object
+
+const {name, age} = person;
+
+ES6 Array Destructuring
+
+[street,city,state] =  address
+
+action generator
+
+const incrementCount = (payload={}) =>({
+   type: 'INCREMENT'
+   incrementBy: typeof payload.incrementBy === 'number' ? payload.incrementBy : 1
+})
+
+ 
+Reducer
+
+const countRaducer = (state, action) =>{
+   ...
+   
+};
+
+const store = createStore(countReducer);
+
+import { createStore, combineReducer }  from 'redux';
+
+
+combine many reducers
+
+console.log(store.getState());
+
+es6 
+
+npm install uuid
+yarn add uuid@3.1.0
+
+store.subscribe(()=>{             //track store change
+   console.log(store.getState());
+})
+
+store.dispatch
+
+state.concat(action.expense)   //no push
+
+es6 spread
+
+[''Tim, ...names, 'Mike']   //change array
+
+spread object , (last one overwrite propeprty
+
+it need new plugin
+
+yarn add babel-plugin-transform-object-rest-spread@6.23.0
+
+.babalrc
+
+pugin: "transform-object-rest-spread"
+
+
+
+action generator
+reducer
+store
+store dispatch
+
+sate.map for edit
+
+use spread overwrite feature
+
+spread can create new object or overwrite properties in object
+
+experenses.filter((expense) =>{
+
+}
+)
+
+str.includes
+ 
+ search
+ 
+ mdn sort
+ 
+ .sort((a,b) =>{
+  return a.amount < b.amount ? 1 : -1;
+ }

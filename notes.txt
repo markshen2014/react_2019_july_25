@@ -36,8 +36,9 @@ The Great Gatsby Bootcamp
 
 https://mead.io/blog
 
+===========================================================
 
-section 10
+section 10  redux
 
 large scale app
 
